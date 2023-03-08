@@ -1,0 +1,39 @@
+.background {
+    background-color:gainsboro;
+}
+
+.signature {
+    text-align: start;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 767px) {
+    .links {
+        justify-content: center;
+        margin-top: 18px;
+    }
+
+    .footer {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .social {
+        order: 1;
+    } 
+
+    .signature {
+        order: 2;
+        text-align: center;
+    }
+}

@@ -1,0 +1,151 @@
+header {
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  transition: all 400ms;
+}
+
+.container__header {
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+header .container__button {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-contact {
+  border: none;
+  color: #1e4171;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 3px 3px 30px -5px #1e4171;
+  transition: box-shadow 300ms ease-in-out;
+}
+
+.btn-contact:hover {
+  box-shadow: 6px 6px 50px -5px #1e4171;
+  background-color: #f5b9cb;
+  color: #1e4171;
+}
+
+.container__nav {
+  position: relative;
+  height: 100%;
+}
+
+nav {
+  height: 100%;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0px 20px;
+  list-style: none;
+
+}
+
+nav ul li a{
+  color: #1e4171;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin-left: 25px;
+  background-image: linear-gradient(90deg, #f5b9cb, #f5b9cb, #f5b9cb);
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  background-position: left bottom;
+  cursor: pointer;
+  transition: background-size, 400ms ease-in-out;
+}
+
+nav ul li a:hover {
+  background-size: 100% 2px;
+  color:#f5b9cb; 
+}
+
+.nav_mod {
+  height: 70px;
+  box-shadow: 1px 1px 10px 0px #1e4171;
+}
+
+.btn__menu {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background 400ms;
+  display: none;
+}
+
+.btn__menu:hover {
+  background: #fce8e9;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .container__nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn__menu {
+    display: flex;
+  }
+  nav {
+    height: 100%;
+    background: #1e4171;
+    position: fixed;
+    top: 0;
+    right: -230px;
+    padding: 0 40px;
+    transition: all 400ms;
+  }
+  .move__nav {
+    right: 0px;
+  }
+  nav ul {
+    padding: 0;
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 30px;
+  }
+  nav ul li a{
+    margin: 0;
+    color: #f3f3f3;
+    background-image: linear-gradient(90deg, #f5b9cb, #f5b9cb, #f5b9cb);
+  }
+  nav ul li a:hover {
+    background-size: 100% 2px;
+    color:#f5b9cb; 
+  }
+  .btn-contact {
+    box-shadow: 1px 1px 15px -2px #1e4171;
+}
+  
+}

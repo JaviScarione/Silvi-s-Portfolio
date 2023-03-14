@@ -1,0 +1,142 @@
+.container__about {
+    background-color: #f3f3f3; 
+    margin: 0;
+    padding: 0;  
+}
+
+.top {
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+    padding: 100px 100px 0 100px;    
+}
+
+.image {
+    background-image: url(./images/silvi.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 6.5rem;
+    letter-spacing: 3px;
+}
+
+.bottom {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+
+.bottom h2 {
+    font-size: 5rem;
+    margin: 70px 0;
+}
+
+.bottom section {
+    font-size: 1.2rem;
+    margin-bottom: 70px;
+}
+
+.h2 {
+    margin: 50px 0 20px 0;
+}
+
+.first_p {
+    padding-top: 30px;
+} 
+
+.data {
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+    width: 100%;
+    margin: 0;
+}
+
+.btn-about {
+    margin: 40px 0 80px 0;
+    border: none;
+    font-weight: bold;
+    background-color: #f5b9cb;
+    box-shadow: 3px 3px 30px -5px #1e4171;
+    transition: box-shadow 300ms ease-in-out;
+    color: #1e4171;
+}
+
+.btn-about:hover {
+    box-shadow: 6px 6px 50px -5px #1e4171;
+    background-color: #f5b9cb;
+    color:  #202934;
+}
+
+.text_about p{
+    font-size: 1.2rem;
+}
+
+.text_about {
+    font-size: 1.2rem;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .top {
+        margin: 0;
+        padding: 150px 20px 30px 20px;
+    }
+    .container__about{
+        text-align: center;
+    }
+    h1 {
+        font-size: 3.3rem;
+        letter-spacing: 0px;
+    } 
+    .bottom h2 {
+        font-size: 3rem;
+        margin: 50px 0 30px 0;
+    }
+    
+    .bottom section {
+        font-size: 0.8rem;
+        margin-bottom: 40px;
+    }    
+    .h2 {
+        margin: 35px 0 20px 0;
+        font-size: 1.4rem;
+    }    
+    .data p{
+        font-weight: bolder;
+        font-size: 0.9rem;
+        padding-bottom: 0;
+    }    
+    .btn-about {
+        margin: 20px;
+        border: none;
+        font-size: 0.9rem;
+    }        
+    .text_about p{
+        font-size: 0.9rem;
+    } 
+    .first_p {
+        padding-top: 20px;
+    } 
+    .data {
+        justify-content: center;
+    }
+    .item p{
+        padding: 0;
+        margin: 0;
+    }
+    .item .space {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .image {
+        visibility: hidden;    
+    }
+}

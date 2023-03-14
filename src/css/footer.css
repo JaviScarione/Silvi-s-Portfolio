@@ -1,39 +1,60 @@
-.background {
-    background-color:gainsboro;
+.footer {
+    color: #f3f3f3;
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer ul li a{
+    color: #f3f3f3;
+}
+
+footer ul li a:hover{
+    color: #f5b9cb;
+    transition: all 400ms;
 }
 
 .signature {
     text-align: start;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-link {
+.links {
+    justify-content: end;
+    padding: 0;
     text-align: center;
 }
 
+.social {
+    padding: 0;
+}
+
+
+
 
 @media screen and (max-width: 767px) {
-    .links {
-        justify-content: center;
-        margin-top: 18px;
-    }
-
     .footer {
         align-items: center;
         justify-content: center;
+        padding-top: 40px;
+        font-size: 0.8rem;
     }
-
+    .links {
+        justify-content: center;
+    }  
     .row {
         flex-direction: column;
         text-align: center;
         align-items: center;
-    }
-
+    }  
     .social {
         order: 1;
+        margin-top: 40px;
     } 
-
     .signature {
         order: 2;
         text-align: center;
+        margin-top: 40px;
+
     }
 }

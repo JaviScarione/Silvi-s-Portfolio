@@ -1,13 +1,11 @@
 import React from 'react';
 import '../css/home.css';
-import '../js/script';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 
 
 function Home() {
   return (
-    <div className='container__home container__all' id="container__all">
+    <div className='container__home'>
   
       <div className='cover'>
 
@@ -19,7 +17,8 @@ function Home() {
             </a>
             <h2 className='title colorblue'>Nice to <spam className='colorpink'>e-Meet</spam> You</h2>
             <h1 className='text colordark'>I am Silvi Nuñez, <spam className='colorblue'>Professional Spanish Translator</spam></h1>
-            <p className='text colordark'>Helping companies and individuals reach Spanish markets<br/>through English &lt;&gt; Spanish Translation Services.</p>
+            <p className='text colordark mb-0'>Helping companies and individuals reach Spanish markets</p>
+            <p className='text colordark mt-0 pt-0 mb-3'>through English &lt;&gt; Spanish Translation Services.</p>
             <a href='/services'>
               <button type="button" className='btn btn-home btn-lg text'>All Spanish Services</button>
             </a>              

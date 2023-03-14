@@ -2,7 +2,6 @@ import React from "react";
 import About from './AboutComponent';
 import Contact from "./ContactComponent";
 import Header from "./HeaderComponent";
-import Footer from "./FooterComponent";
 import Home from "./HomeComponent";
 import Services from "./ServicesComponent";
 import { Routes, Route } from 'react-router-dom';

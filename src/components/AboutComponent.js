@@ -11,18 +11,18 @@ function About() {
           <h1 className='colorblue'>About <span className='colorpink'>ME<span className='colorblue'>!</span></span></h1>
         </div>
         <div className='col col-md-12 col-xl-7 text_about'>
-          <h2 className='text colorblue h2'>Hello!</h2>
-          <p className='text colordark'>I am Silvi Nuñez, a professional Spanish translator graduated 
+          <h2 className='text colorblue h2'>Hello! I am <span className='colorpink'>Silvi Nuñez</span></h2>
+          <p className='text colordark'>A professional Spanish translator graduated 
           from the University of Cordoba, Argentina. After earning my translation degree,
            I entered the marketing world to explore my passion for digital marketing, branding, 
            and international business development.</p>
-           <h2 className='text colorblue h2'>What <span className='colorpink'>I Can Do</span> for You.</h2>
+           <h2 className='text colorblue h2'>What <span className='colorpink'>I Can Do</span> for You</h2>
            <p className='text colordark'>I can help you introduce your product or services to Spanish-speaking audiences through
             Spanish translation services. Whether it is a website, email marketing, or a sales brochure,
              I ensure that the message sounds natural and achieves maximum impact in the Spanish audience.
               My role is to facilitate communication and inspire confidence by speaking the client's language.</p>
           <a href='/services'>
-            <button type="button" className='btn btn-about btn-lg text'>All Spanish Services</button>
+            <button type="button" className='btn btn-about btn-lg text'>Spanish Translation Services</button>
           </a> 
         </div>
         <div className='image col-md-5 image'>
@@ -32,25 +32,33 @@ function About() {
         <h2 className='title colorblue'>Why My Clients <span className='colorpink'>Choose Me</span></h2>
         <section>
           <p>These are some reasons why my clients choose me as their go-to professional Spanish translator:</p>
-          <p className='first_p'><FontAwesomeIcon className='colorblue' icon="fa-solid fa-medal" size='xl'/> Creative, quality translations.</p>
-          <p><FontAwesomeIcon className='colorblue' icon="fa-solid fa-language" size='xl'/> Expert knowledge of Spanish markets.</p>
-          <p><FontAwesomeIcon className='colorblue' icon="fa-solid fa-business-time" size='xl'/> Responsive and always on time.</p>
+          <div className='row row-cols-3 reasons'>
+            <div className='reason'>
+              <p className='first_p'><FontAwesomeIcon className='colorblue' icon="fa-solid fa-medal" size='xl'/> Creative, quality translations.</p>
+            </div>
+            <div className='reason'>
+              <p><FontAwesomeIcon className='colorblue' icon="fa-solid fa-language" size='xl'/> Expert knowledge of Spanish markets.</p>
+            </div>
+            <div className='reason'>
+              <p><FontAwesomeIcon className='colorblue' icon="fa-solid fa-business-time" size='xl'/> Responsive and always on time.</p>
+            </div>
+          </div>
         </section>        
       </div>
       <div className='data backgroundlightpink text'>
         <div className='container'>
-          <div className='row'>
+          <div className='row justify-content-center'>
             <div className='col-6 col-md-4 item'>
-              <p>8+</p>
+              <p>+8</p>
               <p>Years of experience</p>
             </div>
             <div className='col-6 col-md-4 item'>
-              <p className='space'>350k+</p>
+              <p>+350k</p>
               <p>Translated words</p>
             </div>
             <div className='col-12 col-md-4 item'>
-              <p className='space'>400+</p>
-              <p>Language projects</p>
+              <p>+400</p>
+              <p>Spanish translation projects</p>
             </div>
           </div>
         </div>

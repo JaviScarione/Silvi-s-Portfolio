@@ -31,29 +31,35 @@ h1 {
 
 .bottom h2 {
     font-size: 5rem;
-    margin: 70px 0;
+    margin: 35px 0;
 }
 
 .bottom section {
-    font-size: 1.2rem;
-    margin-bottom: 70px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 35px 0;
 }
 
 .h2 {
     margin: 50px 0 20px 0;
 }
 
-.first_p {
-    padding-top: 30px;
-} 
-
 .data {
-    justify-content: space-between;
+    justify-content: center;
     font-weight: bolder;
     font-size: 1.5rem;
-    padding-bottom: 30px;
+    padding: 35px 0;
     width: 100%;
     margin: 0;
+}
+
+.reasons {
+    margin: 50px 35px 0 35px;
+}
+
+.reasons p {
+    margin-bottom: 0;
+    font-size: 1.3rem;
 }
 
 .btn-about {
@@ -80,6 +86,20 @@ h1 {
     font-size: 1.2rem;
 }
 
+.item {
+    justify-content: center;
+    align-items: center;
+    width: 32%;
+    margin: 0 5px;
+    border: 2px solid #1e4171;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px -1px #1e4171;
+}
+
+.data p {
+    margin: 5px;
+}
+
 
 
 @media screen and (max-width: 767px) {
@@ -96,15 +116,30 @@ h1 {
     } 
     .bottom h2 {
         font-size: 3rem;
-        margin: 50px 0 30px 0;
+        padding: 30px 0 10px 0;
+        margin: 0;
     }
     
     .bottom section {
-        font-size: 0.8rem;
-        margin-bottom: 40px;
-    }    
+        font-size: 0.9rem;
+        margin: 0;
+    }  
+    .reasons {
+        margin: 16px 0 0 0; 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .reason {
+        width: 100%;
+        margin: 7px 0;
+    }  
+    .reason p{
+        font-size: 0.8rem;    
+    } 
     .h2 {
-        margin: 35px 0 20px 0;
+        margin: 20px 0;
         font-size: 1.4rem;
     }    
     .data p{
@@ -119,19 +154,20 @@ h1 {
     }        
     .text_about p{
         font-size: 0.9rem;
-    } 
-    .first_p {
-        padding-top: 20px;
-    } 
+    }  
     .data {
         justify-content: center;
+        padding: 32px 0;
+    }
+    .item {
+        width: 80%;
+        padding: 5px 0;
+        margin-bottom: 8px;
     }
     .item p{
         padding: 0;
         margin: 0;
-    }
-    .item .space {
-        margin-top: 30px;
+        font-size: 0.7rem;
     }
 }
 

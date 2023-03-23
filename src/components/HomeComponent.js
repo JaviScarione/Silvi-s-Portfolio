@@ -20,7 +20,7 @@ function Home() {
             <p className='text colordark mb-0'>Helping companies and individuals reach Spanish markets</p>
             <p className='text colordark mt-0 pt-0 mb-3'>through English &lt;&gt; Spanish Translation Services.</p>
             <a href='/services'>
-              <button type="button" className='btn btn-home btn-lg text'>All Spanish Services</button>
+              <button type="button" className='btn btn-home btn-lg text'>Spanish Translation Services</button>
             </a>              
             <ul className="container__social list-unstyled d-flex">
               <li><a className="text-muted" href="https://twitter.com/silvina_nunez" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className='social_logo' icon="fa-brands fa-twitter" size='xl'/></a></li>

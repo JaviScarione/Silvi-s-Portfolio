@@ -97,7 +97,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  transition: background 400ms;
+  transition: all 400ms;
   display: none;
 }
 
@@ -118,10 +118,11 @@ nav ul li a:hover {
   }
   nav {
     height: 100%;
+    width: 250px;
     background: #1e4171;
     position: fixed;
     top: 0;
-    right: -230px;
+    right: -250px;
     padding: 0 40px;
     transition: all 400ms;
   }

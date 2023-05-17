@@ -2,13 +2,15 @@ import React from 'react';
 import '../css/about.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Footer from './FooterComponent';
+import ClientsReviews from "./ClientsReviews";
+
 
 function About() {
   return (
     <div className='container__about text-center'>
       <div className='row d-flex justify-content-center top'>
         <div className='col-12 title'>
-          <h1 className='colorblue'>About <span className='colorpink'>ME<span className='colorblue'>!</span></span></h1>
+          <h1 className='colorblue h1'>About <span className='colorpink'>ME<span className='colorblue'>!</span></span></h1>
         </div>
         <div className='col col-md-12 col-xl-7 text_about'>
           <h2 className='text colorblue h2'>Hello! I am <span className='colorpink'>Silvi Nuñez</span></h2>
@@ -63,6 +65,7 @@ function About() {
           </div>
         </div>
       </div>
+      <ClientsReviews />
       <Footer />
     </div>
   );

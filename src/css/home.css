@@ -56,7 +56,7 @@
     font-weight: bold;
     background-color: #f5b9cb;
     box-shadow: 3px 3px 30px -5px #1e4171;
-    transition: box-shadow 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 .btn-home:hover {
@@ -103,7 +103,7 @@
         align-items: center;
         background-size: 100%;
     }
-    .logo {
+    .enes_logo {
         width: 8vh;
         height: 8vh;
     }

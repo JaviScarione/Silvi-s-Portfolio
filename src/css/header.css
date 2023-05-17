@@ -10,20 +10,23 @@ header {
 }
 
 .container__header {
-  max-width: 1200px;
+  max-width: 1300px;
   height: 100%;
   display: flex;
   justify-content: space-between;
   margin: auto;
-  padding: 0px 20px;
+  padding: 10px 20px;
 }
 
-header .container__button {
+header .container__logo {
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
+  justify-content: start;
+}
+
+.logo {
+  width: 250px;
+  object-fit: contain;
 }
 
 .btn-contact {
@@ -32,7 +35,7 @@ header .container__button {
   font-size: 16px;
   font-weight: bold;
   box-shadow: 3px 3px 30px -5px #1e4171;
-  transition: box-shadow 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .btn-contact:hover {
@@ -63,7 +66,7 @@ nav ul li {
 
 }
 
-nav ul li a{
+.link{
   color: #1e4171;
   font-weight: 600;
   font-size: 16px;
@@ -75,10 +78,29 @@ nav ul li a{
   background-size: 0% 2px;
   background-position: left bottom;
   cursor: pointer;
-  transition: background-size, 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
-nav ul li a:hover {
+.selected{
+  color: #1e4171;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin-left: 25px;
+  background-image: linear-gradient(90deg, #f5b9cb, #f5b9cb, #f5b9cb);
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: left bottom;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.selected:hover{
+  color: #f5b9cb;
+}
+
+.link:hover {
   background-size: 100% 2px;
   color:#f5b9cb; 
 }
@@ -99,11 +121,16 @@ nav ul li a:hover {
   border-radius: 50%;
   transition: all 400ms;
   display: none;
+  transition: all 400ms ease-in-out;
 }
 
 .btn__menu:hover {
   background: #fce8e9;
 }
+
+
+
+
 
 
 
@@ -136,14 +163,21 @@ nav ul li a:hover {
   nav ul li {
     margin: 30px;
   }
-  nav ul li a{
+  nav ul li .link{
     margin: 0;
     color: #f3f3f3;
     background-image: linear-gradient(90deg, #f5b9cb, #f5b9cb, #f5b9cb);
   }
-  nav ul li a:hover {
+  nav ul li .link:hover {
     background-size: 100% 2px;
     color:#f5b9cb; 
+  }
+  .selected{
+    margin: 0;
+    color: #f3f3f3;
+    background-image: linear-gradient(90deg, #f5b9cb, #f5b9cb, #f5b9cb);
+    background-size: 100% 2px;
+    cursor: pointer;
   }
   .btn-contact {
     box-shadow: 1px 1px 15px -2px #1e4171;

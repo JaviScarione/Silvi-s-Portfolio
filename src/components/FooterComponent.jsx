@@ -4,11 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 function Footer() {
+
+  let date = new Date();
+
   return (    
     <div className='backgroundblue footer'>
       <div className='container'>
           <footer className="row row-cols-1 row-cols-md-4 d-flex flex-wrap align-items-center">
-            <p className="signature col col-md-4">&copy; 2023 Silvi Nuñez.</p>
+            <p className="signature col col-md-4">&copy; {date.getFullYear()} Silvi Nuñez.</p>
 
             <ul className="social nav col col-md-4 d-flex align-items-center justify-content-center text-decoration-none list-unstyled">
               <li className="mx-3"><a href="https://twitter.com/silvina_nunez" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-twitter" size="xl" /></a></li>

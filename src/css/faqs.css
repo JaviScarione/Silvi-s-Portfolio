@@ -1,0 +1,128 @@
+.container__faqs {
+    background-color: #f3f3f3; 
+    margin: 0;
+    padding: 0;
+}
+
+.color {
+    color: #f5b9cb;
+}
+
+.faqs {
+    width: 50%;
+    height: 100%;
+    margin-top: 80px;
+    margin-left: 25%;
+    padding: 100px 0;  
+}
+
+.faqs-title {
+    font-size: 6.5rem;
+    letter-spacing: 3px;
+}
+
+.faqs h2 {
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+.list li::marker {
+    font-size: 1.5rem;
+    color: #f5b9cb;
+}
+
+.question {
+    padding: 80px 0 80px 0;
+    background-color: #202934;
+}
+
+.question-text h3{
+    text-align: start;
+    color: #f3f3f3;
+    font-size: 2rem;
+}
+
+.btn-question {
+    width: 180px;
+    height: 50px;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    color: #f3f3f3;
+    background-color: #1e4171;
+    transition: all 400ms ease-in-out;
+}
+  
+.btn-question:hover {
+    width: 190px;
+    height: 55px;
+    font-size: 1.2rem;
+    box-shadow: 0px 0px 30px -5px #f3f3f3;
+    background-color: #1e4171;
+}
+
+@media screen and (max-width: 767px) {
+    .faqs {
+        width: 100%;
+        height: 100%;
+        margin-top: 80px;
+        margin-left: 0;
+    }
+
+    .space {
+        padding: 0 20px;
+    }
+
+    .faqs-title {
+        font-size: 3rem;
+    }
+    
+    .faqs h2 {
+        margin-top: 50px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .space h5 {
+        font-size: 16px;
+    }
+    
+    .question {
+        padding: 60px 0 60px 0;
+        background-color: #202934;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        offset: 0;
+    }
+
+    .question-text {
+        width: 80%;
+    }
+    
+    .question-text h3{
+        margin-left: 0;
+        text-align: center;
+        color: #f3f3f3;
+        font-size: 20px;
+    }
+
+    .button-area { 
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .btn-question {
+        width: 180px;
+        height: 50px;
+        border: none;
+        font-size: large;
+        font-weight: bold;
+        color: #f3f3f3;
+        background-color: #1e4171;
+        transition: all 400ms ease-in-out;
+    } 
+}

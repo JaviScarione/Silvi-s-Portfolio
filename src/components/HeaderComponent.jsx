@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import '../css/header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -11,6 +11,7 @@ function Header() {
   const [selectedItem, setSelectedItem] = useState('');
   const [scrollY, setScrollY] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
   useEffect(() => {
     function handleScroll() {
@@ -42,6 +43,20 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   }
 
+  useEffect(() => {
+    function handleOutsideClick(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, []);
+
 
   return (
     <header id="header" className={isMenuOpen ? 'move__content' : ''}>
@@ -50,7 +65,7 @@ function Header() {
           <img className='logo' src="assets/images/logo-sf.png" alt='Logo'/>
         </Link>
         <div className='container__nav'>
-          <nav id='nav' className={isMenuOpen ? 'move__nav' : ''}>
+          <nav id='nav' className={isMenuOpen ? 'move__nav' : ''} ref={menuRef}>
             <ul>
               <li><Link id='btnhome' className={selectedItem === 'btnhome' ? 'selected' : 'link'} to="/" onClick={() => handleItemClick('btnhome')}>Home</Link></li>
               <li><Link id='btnabout' className={selectedItem === 'btnabout' ? 'selected' : 'link'} to="/about" onClick={() => handleItemClick('btnabout')}>About Me</Link></li>

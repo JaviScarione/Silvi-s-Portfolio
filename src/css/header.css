@@ -25,7 +25,7 @@ header .container__logo {
 }
 
 .logo {
-  width: 250px;
+  width: 200px;
   object-fit: contain;
 }
 
@@ -150,7 +150,6 @@ nav ul li {
     position: fixed;
     top: 0;
     right: -250px;
-    padding: 0 40px;
     transition: all 400ms;
   }
   .move__nav {

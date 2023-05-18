@@ -1,15 +1,20 @@
+.reviews-container {
+    width: 100%;
+}
+
 .reviewTitle {
-    font-size: 5.5rem;
+    font-size: 5rem;
+    margin: 10px;
 }
 
 .subtitle {
-    font-size: 1.1rem;
-    font-weight: bold;
+    font-size: 1.6rem;
 }
 
 .card {
     border: none;
     background: #f3f3f3;
+    max-width: fit-content;
 }
 
 .review {
@@ -40,7 +45,7 @@
     justify-content: center;
 }
 
-h4 {
+.review-info h4 {
     font-weight: bolder;
 }
 
@@ -62,4 +67,37 @@ h4 {
 
 .img-container:hover {
     opacity: 0.7;
+}
+
+@media screen and (max-width: 767px) {
+    .reviewTitle {
+        font-size: 3rem;
+    }
+    .subtitle {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    .review {
+        margin-top: 40px;
+        align-items: end;
+        justify-content: center;
+        text-align: center;
+    }
+    .review-info{
+        width: auto;
+    }
+    .review-info h4 {
+        font-size: 18px;
+    }
+    .review-info p {
+        font-size: 12px;
+    }
+    .comment {
+        font-size: 0.9rem;
+    }
+    .img {
+        width: 70%;
+        height: 70%;
+        object-fit: contain;
+    }
 }

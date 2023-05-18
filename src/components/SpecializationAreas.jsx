@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
+import { Link } from 'react-router-dom';
 
 const SpecializationAreas = () => {
     return (
@@ -12,7 +13,7 @@ const SpecializationAreas = () => {
               <p>Reach out and let's discuss how I can help.</p>
             </div>
             <div className="col-3">
-              <button type="button" className='btn btn-services text'>Contact Me</button>
+              <Link to="/contact"><button type="button" className='btn btn-services text'>Contact Me</button></Link>
             </div>
           </div>
         </div>       

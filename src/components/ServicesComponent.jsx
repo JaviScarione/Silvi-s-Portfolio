@@ -9,12 +9,7 @@ function Services() {
     <div className="container__services text-center">
       <div className="row d-flex justify-content-center top_services">
         <div className="col-12 title">
-          <h1 className="colorblue">
-            Spanish{" "}
-            <span className="colorpink">
-              Translation <span className="colorblue">Services</span>
-            </span>
-          </h1>
+          <h1 className="colorblue">Spanish Translation <span className="colorpink">Services</span></h1>
           <h2 className="text colordark">
             I have been supporting clients from all over the globe with Spanish
             translation services, including:

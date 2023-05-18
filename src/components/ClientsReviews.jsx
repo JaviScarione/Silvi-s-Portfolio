@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ClientsReviews = () => {
     return (
-        <div className='container text text-center'>
-            <h2 className='title reviewTitle'>Client Reviews</h2>
+        <div className='container text text-center my-5'>
+            <h2 className='title reviewTitle colorblue'>Client <span className='colorpink'>Reviews</span></h2>
             <p className='subtitle'>I will go above and beyond to make sure my clients are happy, and to be proud of the work I deliver.</p>
             <p className='subtitle'>Below is what some of my customers have to say about my work.</p>
             <div className="reviews-container mt-5">
@@ -66,9 +66,7 @@ const ClientsReviews = () => {
                         </div>
                     </div>
 
-
-
-                    <div className="card col-12 col-sm-5 m-5">
+                    <div className="card col-12 col-sm-5">
                         <div className="review">
                             <a href='https://multilingualconnections.com/' target="_blank" rel="noopener noreferrer" className='col-5 img-container' alt="Multilingual Connections">
                                 <img className='img' src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_11a09157d4f71103cf4a2e51037068bf/multilingual-connections.jpg" alt="Multilingual Connections" />
@@ -93,18 +91,14 @@ const ClientsReviews = () => {
                         </div>
                     </div>
 
-
-
-
-
-                    <div className="card col-12 col-sm-5 m-5">
+                    <div className="card col-12 col-sm-5">
                         <div className="review">
                             <a href='https://www.optimational.com/' target="_blank" rel="noopener noreferrer" className='col-5 img-container' alt="Optimational">
                                 <img className='img' src="https://media.licdn.com/dms/image/C4E0BAQEBVESxBWT5NA/company-logo_200_200/0/1668516759240?e=1692230400&v=beta&t=SlrcrNAAqRuWx45HZlH23KPvGucAeWK4v8ve6t63U78" alt="Optimational" />
                             </a>
                             <div className='col-7 review-info'>
-                                <h4>Ann Mont</h4>
-                                <p>Optimational</p>
+                                <h4>Hasan Alkan</h4>
+                                <p>Multilingual Connections</p>
                                 <div className='stars-container'>
                                     <FontAwesomeIcon icon="fa-solid fa-star" className='star' />
                                     <FontAwesomeIcon icon="fa-solid fa-star" className='star' />
@@ -121,13 +115,6 @@ const ClientsReviews = () => {
                             <a href="https://www.proz.com/feedback-card/2189278" target="_blank" rel="noopener noreferrer"><button className='btn read-more'>Read More</button></a>
                         </div>
                     </div>
-
-
-
-
-
-
-                    
                 </div>
             </div>            
         </div>

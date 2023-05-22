@@ -19,8 +19,8 @@ const ClientsReviews = () => {
             <p className='subtitle'>Below is what some of my customers have to say about my work.</p>
             <div className="reviews-container mt-5">
                 <div className="row d-flex justify-content-evenly">
-                   <div className="card col-12 col-sm-5">
-                        <div data-aos="fade-right" data-aos-duration="2500" className="review">
+                   <div data-aos="fade-right" className="card col-12 col-sm-5">
+                        <div data-aos-duration="2500" className="review">
                             <a href='https://www.responsivetranslation.com/' target="_blank" rel="noopener noreferrer" className='col-5 img-container' alt="Responsive Translation">
                                 <img className='img' src="https://media.licdn.com/dms/image/C510BAQG9CghK6b8zWA/company-logo_200_200/0/1519901250512?e=2147483647&v=beta&t=3f_qNUUfB3sKnH2TqPzeU5YjXJxUFUXE6TuSPuwyumw" alt="Responsive Translation" />
                             </a>
@@ -44,7 +44,7 @@ const ClientsReviews = () => {
                         </div>
                     </div>
 
-                    <div data-aos="fade-right" data-aos-duration="2500" className="card col-12 col-sm-5">
+                    <div data-aos="fade-right" className="card col-12 col-sm-5">
                         <div className="review">
                             <a href='https://multilingualconnections.com/' target="_blank" rel="noopener noreferrer" className='col-5 img-container' alt="Multilingual Connections">
                                 <img className='img' src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_11a09157d4f71103cf4a2e51037068bf/multilingual-connections.jpg" alt="Multilingual Connections" />
@@ -69,7 +69,7 @@ const ClientsReviews = () => {
                         </div>
                     </div>
 
-                    <div data-aos="fade-right" data-aos-duration="2500" className="card col-12 col-sm-5">
+                    <div data-aos="fade-right" className="card col-12 col-sm-5">
                         <div className="review">
                             <a href='https://multilingualconnections.com/' target="_blank" rel="noopener noreferrer" className='col-5 img-container' alt="Multilingual Connections">
                                 <img className='img' src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_11a09157d4f71103cf4a2e51037068bf/multilingual-connections.jpg" alt="Multilingual Connections" />
@@ -94,7 +94,7 @@ const ClientsReviews = () => {
                         </div>
                     </div>
 
-                    <div data-aos="fade-right" data-aos-duration="2500" className="card col-12 col-sm-5">
+                    <div data-aos="fade-right" className="card col-12 col-sm-5">
                         <div className="review">
                             <a href='https://www.optimational.com/' target="_blank" rel="noopener noreferrer" className='col-5 img-container' alt="Optimational">
                                 <img className='img' src="https://media.licdn.com/dms/image/C4E0BAQEBVESxBWT5NA/company-logo_200_200/0/1668516759240?e=1692230400&v=beta&t=SlrcrNAAqRuWx45HZlH23KPvGucAeWK4v8ve6t63U78" alt="Optimational" />

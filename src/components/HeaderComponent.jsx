@@ -3,8 +3,8 @@ import '../css/header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-import { Link } from 'react-router-dom';
 
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -39,21 +39,25 @@ function Header() {
     setIsMenuOpen(false);
   }
 
-  function showMenu() {
+  function handleMenuButtonClick() {
     setIsMenuOpen(!isMenuOpen);
   }
 
-  useEffect(() => {
-    function handleOutsideClick(event) {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setIsMenuOpen(false);
-      }
+  function handleOutsideMenuClick(event) {
+    if (
+      menuRef.current &&
+      !menuRef.current.contains(event.target) &&
+      !document.getElementById('btn_menu').contains(event.target)
+    ) {
+      setIsMenuOpen(false);
     }
+  }
 
-    document.addEventListener('mousedown', handleOutsideClick);
+  useEffect(() => {
+    document.addEventListener('click', handleOutsideMenuClick);
 
     return () => {
-      document.removeEventListener('mousedown', handleOutsideClick);
+      document.removeEventListener('click', handleOutsideMenuClick);
     };
   }, []);
 
@@ -74,13 +78,13 @@ function Header() {
               <li><Link id='btnfaqs' className={selectedItem === 'btnfaqs' ? 'selected' : 'link'} to="/faqs" onClick={() => handleItemClick('btnfaqs')}>FAQs</Link></li>
               <li>
                 <Link to='/contact'>
-                  <button type="button" className='btn btn-contact btn-lg backgroundpink text'>Contact Silvi</button>
+                  <button type="button" className='btn btn-contactheader btn-lg backgroundpink text'>Contact Silvi</button>
                 </Link>
               </li>
             </ul>
           </nav>
             
-          <div className="btn__menu" id='btn_menu' onClick={showMenu}>
+          <div className="btn__menu" id='btn_menu' onClick={handleMenuButtonClick}>
             <FontAwesomeIcon icon={faBars} />
           </div>
         </div>        

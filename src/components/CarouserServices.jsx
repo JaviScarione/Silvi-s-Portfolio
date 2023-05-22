@@ -1,18 +1,24 @@
-import React from "react";
+import { useEffect } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import Image from "../css/images/img.png";
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 const CarouserServices = () => {
+
+  useEffect(() => {
+    Aos.init({duration: 1500});
+  }, []);
+
   return (
-    <div className="carousel">
-      <Carousel variant="dark" indicators={false} className="text d-flex">
+    <div data-aos="fade-right" className="carousel_container">
+      <Carousel variant="dark" indicators={false} className="text carousel">
         <Carousel.Item>
           <div className="container">
-            <div className="row justify-content-center align-items-center carouselitem">
-              <div className="col-5">
-                <img className="carouselImg" src={Image} alt="First slide" />
+            <div className="row carouselitem">
+              <div className="col col-md-3">
+                <img className="carouselImg" src="https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1602191595949-1b1e5fb5634a%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnw1NTEzfDB8MXxzZWFyY2h8MzJ8fHNwYW5pc2h8ZW58MHx8fHwxNjY4NDI0NzY1%26ixlib%3Drb-4.0.3%26q%3D80%26w%3D600%26utm_source%3Dendurance-innovation%26utm_medium%3Dreferral" alt="First slide" />
               </div>
-              <div className="col-7 justify-content-center align-items-center">
+              <div className="col col-md-7">
                 <h3>Spanish Translations & Localizations</h3>
                 <p>
                   Looking to translate your company's content into Spanish? Look
@@ -31,8 +37,8 @@ const CarouserServices = () => {
         </Carousel.Item>
         <Carousel.Item>
           <div className="container">
-            <div className="row justify-content-center align-items-center carouselitem">
-              <div className="col-7 justify-content-center align-items-center">
+            <div className="row carouselitem">
+              <div className="col col-md-7">
                 <h3>Spanish SEO Translations</h3>
                 <p>
                   Are you looking to boost your website visibility and increase
@@ -46,10 +52,10 @@ const CarouserServices = () => {
                   the Spanish-speaking market - contact me today to get started!
                 </p>
               </div>
-              <div className="col-5">
+              <div className="col col-md-3">
                 <img
-                  className="carouselImg d-block"
-                  src={Image}
+                  className="carouselImg"
+                  src="https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1560472354-b33ff0c44a43%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnw1NTEzfDB8MXxzZWFyY2h8Mnx8c2VvfGVufDB8fHx8MTY2ODQyNDY2MA%26ixlib%3Drb-4.0.3%26q%3D80%26w%3D600%26utm_source%3Dendurance-innovation%26utm_medium%3Dreferral"
                   alt="First slide"
                 />
               </div>
@@ -58,15 +64,15 @@ const CarouserServices = () => {
         </Carousel.Item>
         <Carousel.Item>
           <div className="container">
-            <div className="row justify-content-center align-items-center carouselitem">
-              <div className="col-5">
+            <div className="row carouselitem">
+              <div className="col col-md-3">
                 <img
-                  className="carouselImg d-block"
-                  src={Image}
+                  className="carouselImg"
+                  src="https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1556196148-1fb724238998%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnw1NTEzfDB8MXxzZWFyY2h8MjR8fGhlYWRwaG9uZXxlbnwwfHx8fDE2Njg0MjQ2MzM%26ixlib%3Drb-4.0.3%26q%3D80%26w%3D600%26utm_source%3Dendurance-innovation%26utm_medium%3Dreferral"
                   alt="First slide"
                 />
               </div>
-              <div className="col-7 justify-content-center align-items-center">
+              <div className="col col-md-7">
                 <h3>Spanish Transcription</h3>
                 <p>
                   Are you interested in making your multimedia content more
@@ -85,8 +91,8 @@ const CarouserServices = () => {
         </Carousel.Item>
         <Carousel.Item>
           <div className="container">
-            <div className="row justify-content-center align-items-center carouselitem">
-              <div className="col-7 justify-content-center align-items-center">
+            <div className="row carouselitem">
+              <div className="col col-md-7">
                 <h3>Spanish Subtitling</h3>
                 <p>
                   Do you want to expand your channel's reach and make your video
@@ -101,10 +107,10 @@ const CarouserServices = () => {
                   today to discuss your subtitle needs!
                 </p>
               </div>
-              <div className="col-5">
+              <div className="col col-md-3">
                 <img
-                  className="carouselImg d-block"
-                  src={Image}
+                  className="carouselImg"
+                  src="https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1517669137467-b2c221703e93%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnw1NTEzfDB8MXxzZWFyY2h8MXx8c3VidGl0bGV8ZW58MHx8fHwxNjY4NDI0NTMw%26ixlib%3Drb-4.0.3%26q%3D80%26w%3D600%26utm_source%3Dendurance-innovation%26utm_medium%3Dreferral"
                   alt="First slide"
                 />
               </div>

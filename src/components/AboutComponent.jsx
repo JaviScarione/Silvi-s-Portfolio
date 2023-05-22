@@ -1,16 +1,22 @@
-import React from 'react';
+import {useEffect} from 'react';
 import '../css/about.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Footer from './FooterComponent';
 import ClientsReviews from "./ClientsReviews";
-
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 function About() {
+
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  }, []);
+
   return (
     <div className='container__about text-center'>
-      <div className='row d-flex justify-content-center top'>
+      <div data-aos="fade-right"  className='row d-flex justify-content-center top'>
         <div className='col-12 title'>
-          <h1 className='colorblue h1'>About <span className='colorpink'>ME<span className='colorblue'>!</span></span></h1>
+          <h1 className='colorblue h1'>About <span className='colorpink'>Me<span className='colorblue'>!</span></span></h1>
         </div>
         <div className='col col-md-12 col-xl-7 text_about'>
           <h2 className='text colorblue h2'>Hello! I am <span className='colorpink'>Silvi Nuñez</span></h2>
@@ -30,11 +36,11 @@ function About() {
         <div className='image col-md-5 image'>
         </div>
       </div>
-      <div className='row d-flex justify-content-center align-items-center bottom backgroundlightpink text'>
+      <div data-aos="fade-up"  className='row d-flex justify-content-center align-items-center bottom backgroundlightpink text'>
         <h2 className='title colorblue'>Why My Clients <span className='colorpink'>Choose Me</span></h2>
         <section>
           <p>These are some reasons why my clients choose me as their go-to professional Spanish translator:</p>
-          <div className='row row-cols-3 reasons'>
+          <div  className='row row-cols-3 reasons'>
             <div className='reason'>
               <p className='first_p'><FontAwesomeIcon className='colorblue' icon="fa-solid fa-medal" size='xl'/> Creative, quality translations.</p>
             </div>
@@ -50,15 +56,15 @@ function About() {
       <div className='data backgroundlightpink text'>
         <div className='container'>
           <div className='row justify-content-center'>
-            <div className='col-6 col-md-4 item'>
+            <div data-aos="fade-up" className='col-6 col-md-4 item'>
               <p>+8</p>
               <p>Years of experience</p>
             </div>
-            <div className='col-6 col-md-4 item'>
+            <div data-aos="fade-up" className='col-6 col-md-4 item'>
               <p>+350k</p>
               <p>Translated words</p>
             </div>
-            <div className='col-12 col-md-4 item'>
+            <div data-aos="fade-up" className='col-12 col-md-4 item'>
               <p>+400</p>
               <p>Spanish translation projects</p>
             </div>

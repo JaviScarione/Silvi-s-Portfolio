@@ -21,25 +21,25 @@ header {
 header .container__logo {
   height: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .logo {
-  width: 200px;
+  width: 300px;
   object-fit: contain;
 }
 
-.btn-contact {
+.btn-contactheader {
   border: none;
   color: #1e4171;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
-  box-shadow: 3px 3px 30px -5px #1e4171;
+  box-shadow: 3px 3px 30px -5px #202934;
   transition: all 300ms ease-in-out;
 }
 
-.btn-contact:hover {
-  box-shadow: 6px 6px 50px -5px #1e4171;
+.btn-contactheader:hover {
+  box-shadow: 6px 6px 50px -5px #202934;
   background-color: #f5b9cb;
   color: #1e4171;
 }
@@ -129,11 +129,6 @@ nav ul li {
 }
 
 
-
-
-
-
-
 @media screen and (max-width: 767px) {
   .container__nav{
     display: flex;
@@ -154,6 +149,9 @@ nav ul li {
   }
   .move__nav {
     right: 0px;
+  }
+  .logo {
+    width: 200px;
   }
   nav ul {
     padding: 0;
@@ -178,7 +176,7 @@ nav ul li {
     background-size: 100% 2px;
     cursor: pointer;
   }
-  .btn-contact {
+  .btn-contactheader {
     box-shadow: 1px 1px 15px -2px #1e4171;
 }
   

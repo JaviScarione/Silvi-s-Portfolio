@@ -15,7 +15,7 @@ const SpecializationAreas = () => {
               
         <div className="container expand">
           <div className="row">
-            <div className="expand_text colordark">
+            <div className="expand_text textlight">
               <h3>Want to Expand Your Presence to Spanish Markets?</h3>
               <p>Reach out and let's discuss how I can help.</p>
             </div>

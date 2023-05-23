@@ -9,6 +9,7 @@ function Faqs() {
 
   useEffect(() => {
     Aos.init({duration: 1500});
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -36,17 +37,20 @@ function Faqs() {
                 </h5>
             </div>
         </div>
-        <div data-aos="fade-up" className="question">
-          <div className="row">
-            <div className="col-1"></div>
-            <div className="col-7 question-text colordark">
-              <h3>If you have any questions please contact me!</h3>
+
+
+      <div className="d-flex row justify-content-center align-items-center">
+        <div className="container question">
+          <div data-aos="fade-up" className="row">
+            <div className="question_text textlight">
+              <h3>If You Have any Questions Please Contact Me!</h3>
             </div>
-            <div className="col-3 button-area">
+            <div className="buttonContactFaqs">
               <Link to="/contact"><button type="button" className='btn btn-question text'>Contact Me</button></Link>
             </div>
           </div>
-        </div>      
+        </div> 
+      </div>         
       <Footer />
     </div>
   );

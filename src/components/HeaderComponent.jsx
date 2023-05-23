@@ -77,7 +77,7 @@ function Header() {
               <li><Link id='btncontact' className={selectedItem === 'btncontact' ? 'selected' : 'link'} to="/contact" onClick={() => handleItemClick('btncontact')}>Contact</Link></li>
               <li><Link id='btnfaqs' className={selectedItem === 'btnfaqs' ? 'selected' : 'link'} to="/faqs" onClick={() => handleItemClick('btnfaqs')}>FAQs</Link></li>
               <li>
-                <Link to='/contact'>
+                <Link to='/contact' onClick={() => handleItemClick('btncontact')}>
                   <button type="button" className='btn btn-contactheader btn-lg backgroundpink text'>Contact Silvi</button>
                 </Link>
               </li>

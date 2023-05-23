@@ -11,6 +11,7 @@ function Contact() {
 
   useEffect(() => {
     Aos.init({duration: 1500});
+    window.scrollTo(0, 0);
   }, []);
 
   const form = useRef()

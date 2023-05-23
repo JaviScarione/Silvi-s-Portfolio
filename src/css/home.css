@@ -14,7 +14,6 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-
     background-image: url(./images/bg-home.png);
     background-size:50%;
     background-repeat: no-repeat;
@@ -67,7 +66,7 @@
 }
 
 .container__social {
-    margin-top: 130px;
+    margin-top: 40px;
 }
 
 .container__social a{
@@ -88,9 +87,11 @@
     transition: all 400ms;
 }
 
-
-
-
+.qr {
+    width: 160px;
+    height: 160px;
+    margin-left: 5vw;
+}
 
 
 
@@ -110,7 +111,6 @@
     }
     .cover .container__info{
         margin: 0;
-
     }
     .container__info h2 {
         font-size: 3rem;
@@ -133,13 +133,18 @@
     }
     .container__social {
         justify-content: center;
-        margin-top: 20px;
-        margin-bottom: 280px;
+        margin-top: 30px;
+        margin-bottom: 290px;
     }
     
     .container__social a{
         margin: 15px;
         font-size: 12px;
+    }
+    .qr {
+        width: 160px;
+        height: 160px;
+        margin-left: 0;
     }
 }
 @media only screen and (min-width: 415px) and (max-width: 766px) {

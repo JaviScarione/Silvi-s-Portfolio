@@ -44,9 +44,10 @@
 }
 
 .carouselImg {
-  width: 300px;
-  height: 300px;
-  border-radius: 35%;
+  width: 350px;
+  height: 350px;
+  border-radius: 25%;
+  object-fit: cover;
 }
 
 .carouselitem {
@@ -111,7 +112,6 @@ margin: 40px 0;
   text-align: start;
   font-size: 1.2rem;
   font-weight: bolder;
-  color: #f3f3f3;
   margin-left: 10%;
 }
 

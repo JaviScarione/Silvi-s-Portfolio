@@ -16,7 +16,7 @@ const CarouserServices = () => {
           <div className="container">
             <div className="row carouselitem">
               <div className="col col-md-3">
-                <img className="carouselImg" src="https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1602191595949-1b1e5fb5634a%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnw1NTEzfDB8MXxzZWFyY2h8MzJ8fHNwYW5pc2h8ZW58MHx8fHwxNjY4NDI0NzY1%26ixlib%3Drb-4.0.3%26q%3D80%26w%3D600%26utm_source%3Dendurance-innovation%26utm_medium%3Dreferral" alt="Spanish Translations & Localizations" />
+                <img className="carouselImg" src="assets/images/localisation.jpg" alt="Spanish Translations & Localizations" />
               </div>
               <div className="col col-md-7">
                 <h3>Spanish Translations & Localizations</h3>
@@ -55,7 +55,7 @@ const CarouserServices = () => {
               <div className="col col-md-3">
                 <img
                   className="carouselImg"
-                  src="https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1560472354-b33ff0c44a43%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnw1NTEzfDB8MXxzZWFyY2h8Mnx8c2VvfGVufDB8fHx8MTY2ODQyNDY2MA%26ixlib%3Drb-4.0.3%26q%3D80%26w%3D600%26utm_source%3Dendurance-innovation%26utm_medium%3Dreferral"
+                  src="assets/images/seo.jpg"
                   alt="Spanish SEO Translations"
                 />
               </div>
@@ -68,7 +68,7 @@ const CarouserServices = () => {
               <div className="col col-md-3">
                 <img
                   className="carouselImg"
-                  src="https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1556196148-1fb724238998%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnw1NTEzfDB8MXxzZWFyY2h8MjR8fGhlYWRwaG9uZXxlbnwwfHx8fDE2Njg0MjQ2MzM%26ixlib%3Drb-4.0.3%26q%3D80%26w%3D600%26utm_source%3Dendurance-innovation%26utm_medium%3Dreferral"
+                  src="assets/images/transcription.jpg"
                   alt="Spanish Transcription"
                 />
               </div>
@@ -110,7 +110,7 @@ const CarouserServices = () => {
               <div className="col col-md-3">
                 <img
                   className="carouselImg"
-                  src="https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1517669137467-b2c221703e93%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnw1NTEzfDB8MXxzZWFyY2h8MXx8c3VidGl0bGV8ZW58MHx8fHwxNjY4NDI0NTMw%26ixlib%3Drb-4.0.3%26q%3D80%26w%3D600%26utm_source%3Dendurance-innovation%26utm_medium%3Dreferral"
+                  src="assets/images/subtitling.jpg"
                   alt="Spanish Subtitling"
                 />
               </div>

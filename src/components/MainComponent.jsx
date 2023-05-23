@@ -6,6 +6,8 @@ import Home from "./HomeComponent";
 import Services from "./ServicesComponent";
 import Faqs from "./FaqsComponent";
 import { Routes, Route } from 'react-router-dom';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 
 function Main() {
@@ -20,6 +22,7 @@ function Main() {
           <Route path="/faqs" element={<Faqs />} />
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Routes>
+        <ToastContainer />
     </div>
   );
 }

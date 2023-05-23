@@ -6,7 +6,7 @@
 *Instalación de React mediante su instalador y además sus dependencias:*
 
 ```
-npm i @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome bootstrap fontawesome react-bootstrap react-router-dom reactstrap
+npm i @emailjs/browser @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome @react-spring/web aos bootstrap emailjs-com fontawesome react-bootstrap react-router-dom react-toastify reactstrap
 ```
 ___
 
@@ -24,3 +24,4 @@ ___
 ## Creado con
 
 * [React] (https://es.react.dev/) - Framework del Frontend
+* [Toastify] (https://www.npmjs.com/package/react-toastify) - Notificaciones

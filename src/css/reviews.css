@@ -79,9 +79,9 @@
         font-weight: 400;
     }
     .review {
-        margin-top: 40px;
-        align-items: end;
-        justify-content: center;
+        margin-top: 0;
+        align-items: center;
+        justify-content: normal;
         text-align: center;
     }
     .review-info{
@@ -89,16 +89,25 @@
     }
     .review-info h4 {
         font-size: 18px;
+        margin: 5px 0;
     }
     .review-info p {
         font-size: 12px;
+        margin: 5px 0;
     }
     .comment {
         font-size: 0.9rem;
     }
     .img {
-        width: 70%;
-        height: 70%;
-        object-fit: contain;
+        width: 80%;
+        height: 80%;
     }
+    hr {
+        margin: 5px 0;
+    }
+
+    .comment p {
+        margin-top: 10px;
+    }
+
 }

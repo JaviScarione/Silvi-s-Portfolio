@@ -1,10 +1,10 @@
 import { useRef, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import Footer from './FooterComponent';
 import '../css/contact.css';
 import Aos from 'aos';
 import "aos/dist/aos.css"
+import { toast } from 'react-toastify';
 
 
 function Contact() {
@@ -13,7 +13,6 @@ function Contact() {
     Aos.init({duration: 1500});
   }, []);
 
-  let navigate = useNavigate()
   const form = useRef()
 
   const sendEmail = (e) => {
@@ -21,13 +20,36 @@ function Contact() {
 
     emailjs.sendForm('service_p71fiyn', 'template_im8q8n9', form.current, '2ZlaBfmFfG6qi-P3-')
       .then((result) => {
-        console.log(result.text);
-        alert('Email sent successfully');
+        console.log(result);
+        toast.success('Your message has been sent successfully! 😊', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+          style: {
+            background: "#1e4171",
+            cursor: "default",
+            color: "#f3f3f3"
+          }});
         e.target.reset()
-        navigate("/") 
       }, (error) => {
         console.log(error.text);
-        alert('Failed to send email');
+        toast.error('Failed to send message 😔', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+          style: {
+            background: "#1e4171",
+            cursor: "default",
+            color: "#f3f3f3"
+          }});
       });
   };
 

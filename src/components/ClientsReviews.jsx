@@ -9,18 +9,18 @@ import "aos/dist/aos.css"
 const ClientsReviews = () => {
 
     useEffect(() => {
-        Aos.init({duration: 1500});
+        Aos.init({duration: 2000});
       }, []);
 
     return (
-        <div data-aos="fade-up" data-aos-duration="2500" className='container text text-center my-5'>
+        <div data-aos="fade-up" className='container text text-center'>
             <h2 className='title reviewTitle colorblue'>Client <span className='colorpink'>Reviews</span></h2>
             <p className='subtitle'>I will go above and beyond to make sure my clients are happy, and to be proud of the work I deliver.</p>
             <p className='subtitle'>Below is what some of my customers have to say about my work.</p>
-            <div className="reviews-container mt-5">
+            <div className="reviews-container">
                 <div className="row d-flex justify-content-evenly">
                    <div data-aos="fade-right" className="card col-12 col-sm-5">
-                        <div data-aos-duration="2500" className="review">
+                        <div className="review">
                             <a href='https://www.responsivetranslation.com/' target="_blank" rel="noopener noreferrer" className='col-5 img-container' alt="Responsive Translation">
                                 <img className='img' src="https://media.licdn.com/dms/image/C510BAQG9CghK6b8zWA/company-logo_200_200/0/1519901250512?e=2147483647&v=beta&t=3f_qNUUfB3sKnH2TqPzeU5YjXJxUFUXE6TuSPuwyumw" alt="Responsive Translation" />
                             </a>
@@ -100,8 +100,8 @@ const ClientsReviews = () => {
                                 <img className='img' src="https://media.licdn.com/dms/image/C4E0BAQEBVESxBWT5NA/company-logo_200_200/0/1668516759240?e=1692230400&v=beta&t=SlrcrNAAqRuWx45HZlH23KPvGucAeWK4v8ve6t63U78" alt="Optimational" />
                             </a>
                             <div className='col-7 review-info'>
-                                <h4>Hasan Alkan</h4>
-                                <p>Multilingual Connections</p>
+                                <h4>Ann Mont</h4>
+                                <p>Optimational</p>
                                 <div className='stars-container'>
                                     <FontAwesomeIcon icon="fa-solid fa-star" className='star' />
                                     <FontAwesomeIcon icon="fa-solid fa-star" className='star' />

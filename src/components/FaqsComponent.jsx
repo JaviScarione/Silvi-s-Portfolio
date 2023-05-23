@@ -39,7 +39,7 @@ function Faqs() {
         </div>
 
 
-      <div className="d-flex row justify-content-center align-items-center">
+      <div className="d-flex row question_container justify-content-center align-items-center">
         <div className="container question">
           <div data-aos="fade-up" className="row">
             <div className="question_text textlight">

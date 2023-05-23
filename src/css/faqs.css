@@ -102,6 +102,11 @@
     .space h5 {
         font-size: 16px;
     }
+
+    .question_container {
+        width: 100%;
+        margin: 0;
+    }
     
     .question {
         padding: 40px 0;

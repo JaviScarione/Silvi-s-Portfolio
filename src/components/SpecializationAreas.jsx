@@ -13,7 +13,7 @@ const SpecializationAreas = () => {
     return (
       <div data-aos="fade-up" className="row d-flex justify-content-center align-items-center bottom_services backgroundlightpink text colordark">
               
-        <div className="container expand">
+        <div className="expand">
           <div className="row">
             <div className="expand_text textlight">
               <h3>Want to Expand Your Presence to Spanish Markets?</h3>

@@ -32,8 +32,9 @@ header .container__logo {
 .btn-contactheader {
   border: none;
   color: #1e4171;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
   box-shadow: 3px 3px 30px -5px #202934;
   transition: all 300ms ease-in-out;
 }
@@ -61,17 +62,16 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0px 20px;
+  margin: 0px 30px;
   list-style: none;
-
+  text-align: center;
 }
 
 .link{
   color: #1e4171;
   font-weight: 600;
   font-size: 16px;
-  letter-spacing: 3px;
-  margin-left: 25px;
+  letter-spacing: 2px;
   background-image: linear-gradient(90deg, #f5b9cb, #f5b9cb, #f5b9cb);
   text-decoration: none;
   background-repeat: no-repeat;
@@ -85,8 +85,7 @@ nav ul li {
   color: #1e4171;
   font-weight: 600;
   font-size: 16px;
-  letter-spacing: 3px;
-  margin-left: 25px;
+  letter-spacing: 2px;
   background-image: linear-gradient(90deg, #f5b9cb, #f5b9cb, #f5b9cb);
   text-decoration: none;
   background-repeat: no-repeat;

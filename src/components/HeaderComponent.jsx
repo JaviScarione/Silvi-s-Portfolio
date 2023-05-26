@@ -74,7 +74,6 @@ function Header() {
               <li><Link id='btnhome' className={selectedItem === 'btnhome' ? 'selected' : 'link'} to="/" onClick={() => handleItemClick('btnhome')}>Home</Link></li>
               <li><Link id='btnabout' className={selectedItem === 'btnabout' ? 'selected' : 'link'} to="/about" onClick={() => handleItemClick('btnabout')}>About Me</Link></li>
               <li><Link id='btnservices' className={selectedItem === 'btnservices' ? 'selected' : 'link'} to="/services" onClick={() => handleItemClick('btnservices')}>Services</Link></li>
-              <li><Link id='btncontact' className={selectedItem === 'btncontact' ? 'selected' : 'link'} to="/contact" onClick={() => handleItemClick('btncontact')}>Contact</Link></li>
               <li><Link id='btnfaqs' className={selectedItem === 'btnfaqs' ? 'selected' : 'link'} to="/faqs" onClick={() => handleItemClick('btnfaqs')}>FAQs</Link></li>
               <li>
                 <Link to='/contact' onClick={() => handleItemClick('btncontact')}>
@@ -84,7 +83,7 @@ function Header() {
             </ul>
           </nav>
             
-          <div className="btn__menu" id='btn_menu' onClick={handleMenuButtonClick}>
+          <div className="btn__menu" id='btn_menu' onClick={handleMenuButtonClick} hidden={isMenuOpen ? true : false}>
             <FontAwesomeIcon icon={faBars} />
           </div>
         </div>        

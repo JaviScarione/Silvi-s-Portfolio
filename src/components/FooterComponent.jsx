@@ -14,11 +14,9 @@ function Footer() {
             <p className="signature col col-md-4">&copy; {date.getFullYear()} Silvi Nuñez.</p>
 
             <ul className="social nav col col-md-4 d-flex align-items-center justify-content-center text-decoration-none list-unstyled">
-              <li className="mx-3"><a href="https://twitter.com/silvina_nunez" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-twitter" size="xl" /></a></li>
               <li className="mx-3"><a href="https://www.linkedin.com/in/silvinunez/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-linkedin" size="xl" /></a></li>
+              <li className="mx-3"><a href="https://twitter.com/silvina_nunez" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-twitter" size="xl" /></a></li>
               <li className="mx-3"><a href="https://www.proz.com/translator/2189278" target="_blank" rel="noopener noreferrer"><img className='prozLogo' src="assets/images/proz.png" alt="Proz.com" /></a></li>
-              <li className="mx-3"><a href="https://www.facebook.com/silnunez" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-facebook" size="xl" /></a></li>
-              <li className="mx-3"><a href="https://www.instagram.com/silnuu/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-instagram" size="xl" /></a></li>
             </ul>
 
             <ul className="links nav col col-md-4 d-flex align-items-center">

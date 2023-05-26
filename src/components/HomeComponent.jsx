@@ -25,15 +25,13 @@ function Home() {
             <p className='text colordark mb-0'>Helping companies and individuals reach Spanish markets</p>
             <p className='text colordark mt-0 pt-0 mb-3'>through English &lt;&gt; Spanish Translation Services.</p>
             <a href='/services'>
-              <button data-aos="fade-up" type="button" className='btn btn-home btn-lg text'>Spanish Translation Services</button>
-              <img data-aos="fade-up" className='qr' src="assets/images/qr.png" alt='qr img'/>            
+              <button type="button" className='btn btn-home btn-lg text'>Spanish Translation Services</button>
             </a>
 
             <ul className="container__social list-unstyled d-flex">
-              <li><a className="text-muted" href="https://twitter.com/silvina_nunez" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className='social_logo' icon="fa-brands fa-twitter" size='xl'/></a></li>
               <li><a className="text-muted" href="https://www.linkedin.com/in/silvinunez/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className='social_logo' icon="fa-brands fa-linkedin-in" size='xl'/></a></li>
-              <li><a className="text-muted" href="https://www.facebook.com/silnunez" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className='social_logo' icon="fa-brands fa-facebook-f" size='xl'/></a></li>
-              <li><a className="text-muted" href="https://www.instagram.com/silnuu/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className='social_logo' icon="fa-brands fa-instagram" size='xl'/></a></li>            
+              <li><a className="text-muted" href="https://twitter.com/silvina_nunez" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className='social_logo' icon="fa-brands fa-twitter" size='xl'/></a></li>
+              <li><a href="https://www.proz.com/translator/2189278" target="_blank" rel="noopener noreferrer"><img className='prozLogo' src="assets/images/proz.png" alt="Proz.com" /></a></li>
             </ul>
           </div>
         

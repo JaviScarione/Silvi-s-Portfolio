@@ -37,10 +37,10 @@ function About() {
         <div className='image col-md-5 image'>
         </div>
       </div>
-      <div data-aos="fade-up"  className='row d-flex justify-content-center align-items-center bottom backgroundlightpink text'>
+      <div data-aos="fade-up" className='row d-flex justify-content-center align-items-center bottom backgroundlightpink text'>
         <h2 className='title colorblue'>Why My Clients <span className='colorpink'>Choose Me</span></h2>
         <section>
-          <p>These are some reasons why my clients choose me as their go-to professional Spanish translator:</p>
+          <p className='reasonsTitle'>These are some reasons why my clients choose me as their go-to professional Spanish translator:</p>
           <div  className='row row-cols-3 reasons'>
             <div className='reason'>
               <p className='first_p'><FontAwesomeIcon className='colorblue' icon="fa-solid fa-medal" size='xl'/> Creative, quality translations.</p>

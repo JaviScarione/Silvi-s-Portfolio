@@ -50,7 +50,7 @@
 }
 
 .btn-home {
-    margin-top: 24px;
+    margin: 35px 0;
     border: none;
     font-weight: bold;
     color:  #1e4171;
@@ -66,7 +66,7 @@
 }
 
 .container__social {
-    margin-top: 40px;
+    margin-top: 70px;
 }
 
 .container__social a{
@@ -85,12 +85,6 @@
 .social_logo:hover {
     color: #f5b9cb;
     transition: all 400ms;
-}
-
-.qr {
-    width: 160px;
-    height: 160px;
-    margin-left: 5vw;
 }
 
 
@@ -134,17 +128,12 @@
     .container__social {
         justify-content: center;
         margin-top: 30px;
-        margin-bottom: 290px;
+        margin-bottom: 270px;
     }
     
     .container__social a{
         margin: 15px;
         font-size: 12px;
-    }
-    .qr {
-        width: 160px;
-        height: 160px;
-        margin-left: 0;
     }
 }
 @media only screen and (min-width: 415px) and (max-width: 766px) {

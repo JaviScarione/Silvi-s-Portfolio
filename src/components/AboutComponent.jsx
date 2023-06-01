@@ -5,6 +5,8 @@ import Footer from './FooterComponent';
 import ClientsReviews from "./ClientsReviews";
 import Aos from 'aos';
 import "aos/dist/aos.css"
+import { Link } from 'react-router-dom';
+
 
 function About() {
 
@@ -30,9 +32,9 @@ function About() {
             Spanish translation services. Whether it is a website, email marketing, or a sales brochure,
              I ensure that the message sounds natural and achieves maximum impact in the Spanish audience.
               My role is to facilitate communication and inspire confidence by speaking the client's language.</p>
-          <a href='/services'>
+          <Link to="/services">
             <button type="button" className='btn btn-about btn-lg text'>Spanish Translation Services</button>
-          </a> 
+          </Link> 
         </div>
         <div className='image col-md-5 image'>
         </div>

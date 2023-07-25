@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
 
-  const [selectedItem, setSelectedItem] = useState('');
+  const [selectedItem, setSelectedItem] = useState('btnhome');
   const [scrollY, setScrollY] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
@@ -65,8 +65,8 @@ function Header() {
   return (
     <header id="header" className={isMenuOpen ? 'move__content' : ''}>
       <div className='container__header text'>
-        <Link className='container__logo' to="/">
-          <img className='logo' src="assets/images/logo-sf.png" alt='Logo'/>
+        <Link className='container__logo' to="/" onClick={() => handleItemClick('btnhome')}>
+          <img className='logo' src="assets/images/logo-sf.png" alt='Logo Silvi Nuñez - Translation & SEO'/>
         </Link>
         <div className='container__nav'>
           <nav id='nav' className={isMenuOpen ? 'move__nav' : ''} ref={menuRef}>

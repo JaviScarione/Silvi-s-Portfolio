@@ -11,19 +11,7 @@ const SpecializationAreas = () => {
   }, []);
 
     return (
-      <div data-aos="fade-up" className="row d-flex justify-content-center align-items-center bottom_services backgroundlightpink text colordark">
-              
-        <div className="expand">
-          <div className="row">
-            <div className="expand_text textlight">
-              <h3>Want to Expand Your Presence to Spanish Markets?</h3>
-              <p>Reach out and let's discuss how I can help.</p>
-            </div>
-            <div className="buttonContactService">
-              <Link to="/contact"><button type="button" className='btn btn-services text'>Contact Me</button></Link>
-            </div>
-          </div>
-        </div>       
+      <div data-aos="fade-up" className="row d-flex justify-content-center align-items-center bottom_services backgroundlightpink text colordark">     
       
         <h2 data-aos="fade-up" className="title colorpink">
           Specialization <span className="colorblue">Areas</span>
@@ -56,6 +44,19 @@ const SpecializationAreas = () => {
             </div>
           </div>        
         </div>
+
+        <div className="expand">
+          <div className="row">
+            <div className="expand_text textlight">
+              <h3>Want to Expand Your Presence to Spanish Markets?</h3>
+              <p>Reach out and let's discuss how I can help.</p>
+            </div>
+            <div className="buttonContactService">
+              <Link to="/contact"><button type="button" className='btn btn-services text'>Contact Me</button></Link>
+            </div>
+          </div>
+        </div>  
+
       </div>      
     );
 }

@@ -49,6 +49,10 @@
   color: #202934;
 }
 
+.backgrounddark {
+  background-color: #202934;
+}
+
 .move__content {
   position: relative;
   right: 250px;

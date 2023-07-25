@@ -15,8 +15,8 @@ const ClientsReviews = () => {
     return (
         <div data-aos="fade-up" className='container text text-center'>
             <h2 className='title reviewTitle colorblue'>Client <span className='colorpink'>Reviews</span></h2>
-            <p className='subtitle'>I will go above and beyond to make sure my clients are happy, and to be proud of the work I deliver.</p>
-            <p className='subtitle'>Below is what some of my customers have to say about my work.</p>
+            <p className='subtitle start'>I will go above and beyond to make sure my clients are happy, and to be proud of the work I deliver.</p>
+            <p className='subtitle end'>Below is what some of my customers have to say about my work.</p>
             <div className="reviews-container">
                 <div className="row d-flex justify-content-evenly">
                    <div data-aos="fade-right" className="card col-12 col-sm-5">

@@ -29,7 +29,7 @@
     margin: 0; 
 }
 
-.bottom h2 {
+.bottom h2 { /* Why my Clients Choose Me*/
     font-size: 5rem;
     margin: 35px 0;
 }
@@ -48,9 +48,8 @@
     justify-content: center;
     font-weight: bolder;
     font-size: 1.5rem;
-    padding: 35px 0;
     width: 100%;
-    margin: 0;
+    padding: 35px 0;
 }
 
 .reasons {
@@ -91,9 +90,8 @@
     align-items: center;
     width: 32%;
     margin: 0 5px;
-    border: 2px solid #1e4171;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px -1px #1e4171;
+    border-radius: 50px;
+    box-shadow: 0 0 20px -1px #f3f3f3;
 }
 
 .data p {
@@ -128,7 +126,7 @@
         margin: 10px 0 30px 0; 
     }
     .reasons {
-        margin: 0; 
+        margin: 0 0 30px; 
         width: 100%;
         display: flex;
         justify-content: center;
@@ -161,12 +159,12 @@
     }  
     .data {
         justify-content: center;
-        padding: 20px 0 35px 0;
+        padding: 30px 0;
     }
     .item {
         width: 80%;
         padding: 5px 0;
-        margin-bottom: 8px;
+        margin-bottom: 15px;
     }
     .item p{
         padding: 0;

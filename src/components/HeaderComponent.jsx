@@ -1,7 +1,10 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useContext } from 'react';
 import '../css/header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FormattedMessage } from 'react-intl';
+import { langContext } from './../context/langContext.js';
+
 
 
 import { Link } from 'react-router-dom';
@@ -12,6 +15,8 @@ function Header() {
   const [scrollY, setScrollY] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
+  const language = useContext(langContext);
+
 
   useEffect(() => {
     function handleScroll() {
@@ -35,8 +40,12 @@ function Header() {
   }, [scrollY]);
 
   function handleItemClick(id) {
-    setSelectedItem(id);
-    setIsMenuOpen(false);
+    if (id === 'flag') {
+      setIsMenuOpen(false);
+    } else {
+      setSelectedItem(id);
+      setIsMenuOpen(false);
+    }
   }
 
   function handleMenuButtonClick() {
@@ -71,14 +80,18 @@ function Header() {
         <div className='container__nav'>
           <nav id='nav' className={isMenuOpen ? 'move__nav' : ''} ref={menuRef}>
             <ul>
-              <li><Link id='btnhome' className={selectedItem === 'btnhome' ? 'selected' : 'link'} to="/" onClick={() => handleItemClick('btnhome')}>Home</Link></li>
-              <li><Link id='btnabout' className={selectedItem === 'btnabout' ? 'selected' : 'link'} to="/about" onClick={() => handleItemClick('btnabout')}>About Me</Link></li>
-              <li><Link id='btnservices' className={selectedItem === 'btnservices' ? 'selected' : 'link'} to="/services" onClick={() => handleItemClick('btnservices')}>Services</Link></li>
-              <li><Link id='btnfaqs' className={selectedItem === 'btnfaqs' ? 'selected' : 'link'} to="/faqs" onClick={() => handleItemClick('btnfaqs')}>FAQs</Link></li>
+              <li><Link id='btnhome' className={selectedItem === 'btnhome' ? 'selected' : 'link'} to="/" onClick={() => handleItemClick('btnhome')}><FormattedMessage id='nav.home' defaultMessage='Home'/></Link></li>
+              <li><Link id='btnabout' className={selectedItem === 'btnabout' ? 'selected' : 'link'} to="/about" onClick={() => handleItemClick('btnabout')}><FormattedMessage id='nav.about' defaultMessage='About Me'/></Link></li>
+              <li><Link id='btnservices' className={selectedItem === 'btnservices' ? 'selected' : 'link'} to="/services" onClick={() => handleItemClick('btnservices')}><FormattedMessage id='nav.services' defaultMessage='Services'/></Link></li>
+              <li><Link id='btnfaqs' className={selectedItem === 'btnfaqs' ? 'selected' : 'link'} to="/faqs" onClick={() => handleItemClick('btnfaqs')}><FormattedMessage id='nav.faqs' defaultMessage='FAQs'/></Link></li>
               <li>
                 <Link to='/contact' onClick={() => handleItemClick('btncontact')}>
-                  <button type="button" className='btn btn-contactheader btn-lg backgroundpink text'>Contact Silvi</button>
+                  <button type="button" className='btn btn-contactheader btn-lg backgroundpink text'><FormattedMessage id='nav.contact' defaultMessage='Contact Silvi'/></button>
                 </Link>
+              </li>
+              <li>
+                <button className='btn-flag' onClick={() => {handleItemClick('flag'); language.setLanguage('en-US');}}><img className='flag' src="assets/images/en.png" alt='English Flag'/></button>
+                <button className='ms-3 btn-flag' onClick={() => {handleItemClick('flag'); language.setLanguage('es-ES');}}><img className='flag' src="assets/images/es.png" alt='Spanish Flag'/></button>
               </li>
             </ul>
           </nav>

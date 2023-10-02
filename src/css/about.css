@@ -13,9 +13,9 @@
 
 .image {
     background-image: url(./images/silvi.png);
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
 
 .h1 {
@@ -36,7 +36,6 @@
 
 .bottom section {
     font-size: 1.6rem;
-    font-weight: bold;
     margin: 35px 0;
 }
 

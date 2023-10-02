@@ -41,7 +41,7 @@ function About() {
             <button type="button" className='btn btn-about btn-lg text'>Spanish Translation Services</button>
           </Link> 
         </div>
-        <div className='image col-md-5 image'>
+          <div className='image col-md-5 image'>
         </div>
       </div>
       <div data-aos="fade-up" className='row d-flex justify-content-center align-items-center bottom backgroundlightpink text'>

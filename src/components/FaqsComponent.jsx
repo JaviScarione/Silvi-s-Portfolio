@@ -75,7 +75,7 @@ function Faqs() {
         <div className="container question">
           <div data-aos="fade-up" className="row">
             <div className="question_text textlight">
-              <h3>If You Have any Questions Please Contact Me!</h3>
+              <h3>If You Have any Questions, Please Contact Me.</h3>
             </div>
             <div className="buttonContactFaqs">
               <Link to="/contact"><button type="button" className='btn btn-question text'>Contact Me</button></Link>

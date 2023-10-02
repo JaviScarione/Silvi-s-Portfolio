@@ -17,7 +17,7 @@ const SpecializationAreas = () => {
           Specialization <span className="colorblue">Areas</span>
         </h2>
         <section data-aos="fade-up">
-          <h3>Below, you will find my specialization areas for Spanish services.</h3>
+          <p className='below'>Below, you will find my specialization areas for Spanish services.</p>
           <p>
             If your core business activity is in a different sector, please contact me and I will let you know if I can help. 
             Otherwise, I will try to put you in touch with one of my trusted colleagues to meet your requirements.

@@ -21,8 +21,10 @@ function Home() {
         <div className='container__cover'>
 
           <div data-aos="fade-right" className='container__info'>
-            <img className='enes_logo' src="assets/images/en-es.png" alt='Small logo Silvi Nuñez'/>            
-            <h2 className='title colorblue'>Nice to <span className='colorpink'>e-Meet</span> You</h2>
+            <div className='title_container'>
+              <img className='enes_logo' src="assets/images/en-es.png" alt='Small logo Silvi Nuñez'/>            
+              <h2 className='title colorblue'>Nice to <span className='colorpink'>e-Meet</span> You</h2>
+            </div>
             <h1 className='text colordark'>I am Silvi Nuñez, <span className='colorblue'>Professional Spanish Translator</span></h1>
             <p className='text colordark mt-0 pt-0 mb-3'>Helping companies and individuals reach Spanish markets through English &lt;&gt; Spanish Translation Services.</p>
             <Link to="/services">

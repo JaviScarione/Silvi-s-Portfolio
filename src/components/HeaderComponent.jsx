@@ -15,7 +15,7 @@ function Header() {
   const [scrollY, setScrollY] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
-  const language = useContext(langContext);
+  {/*const language = useContext(langContext);*/}
 
 
   useEffect(() => {
@@ -89,10 +89,10 @@ function Header() {
                   <button type="button" className='btn btn-contactheader btn-lg backgroundpink text'><FormattedMessage id='nav.contact' defaultMessage='Contact Silvi'/></button>
                 </Link>
               </li>
-              <li>
+               {/* <li>
                 <button className='btn-flag' onClick={() => {handleItemClick('flag'); language.setLanguage('en-US');}}><img className='flag' src="assets/images/en.png" alt='English Flag'/></button>
                 <button className='ms-3 btn-flag' onClick={() => {handleItemClick('flag'); language.setLanguage('es-ES');}}><img className='flag' src="assets/images/es.png" alt='Spanish Flag'/></button>
-              </li>
+              </li> */}
             </ul>
           </nav>
             

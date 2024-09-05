@@ -14,8 +14,10 @@
 .image {
     background-image: url(./images/silvi.png);
     background-repeat:no-repeat;
-    background-position: center center;
-    background-size: contain;
+    background-position: bottom center;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .h1 {

@@ -14,11 +14,11 @@ function Faqs() {
 
   return (
     <div className='container__faqs text-center'>
-        <div data-aos="fade-right" className="faqs">
-            <h1 className='title faqs-title colorblue'><span className='color'>F</span>requently <span className='color'>A</span>sked <span className='color'>Q</span>uestions</h1>
+        <div className="faqs">
+            <h1 data-aos="fade-right" className='title faqs-title colorblue'><span className='color'>F</span>requently <span className='color'>A</span>sked <span className='color'>Q</span>uestions</h1>
             <div className="space text">
-                <h5 data-aos="fade-up" className='colordark bold'>Can you provide transcreation services to adapt my marketing content for the Spanish-speaking market?</h5>
-                <h5 data-aos="fade-up" className='mt-2'>Absolutely! Transcreation is a specialized service that goes beyond translation. It involves adapting the content creatively and culturally to
+                <h5 className='colordark bold'>Can you provide transcreation services to adapt my marketing content for the Spanish-speaking market?</h5>
+                <h5 className='mt-2'>Absolutely! Transcreation is a specialized service that goes beyond translation. It involves adapting the content creatively and culturally to
                    ensure it resonates with the target audience. As a Spanish translator experienced in marketing and branding, I can help you with transcreation to
                     ensure your marketing messages are culturally relevant, engaging, and impactful for the Spanish-speaking market.</h5>
                 <h5 data-aos="fade-up" className='colordark bold'>Do you have experience in localizing websites for the Spanish-speaking audience?</h5>
@@ -71,9 +71,9 @@ function Faqs() {
         </div>
 
 
-      <div className="d-flex row question_container justify-content-center align-items-center">
+      <div data-aos="fade-up"  className="d-flex row question_container justify-content-center align-items-center">
         <div className="container question">
-          <div data-aos="fade-up" className="row">
+          <div className="row">
             <div className="question_text textlight">
               <h3>If You Have any Questions, Please Contact Me.</h3>
             </div>

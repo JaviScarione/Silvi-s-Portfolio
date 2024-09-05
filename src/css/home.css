@@ -10,7 +10,7 @@
 
 .container__cover {
     margin-bottom: -45px;
-    padding: 70px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -26,6 +26,20 @@
     margin-left: 5vw;
     margin-bottom: 1vh;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title_container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.enes_logo {
+    width: 90px;
+    height: fit-content;
 }
 
 .container__info p {
@@ -68,7 +82,7 @@
 }
 
 .container__social {
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 .container__social a{
